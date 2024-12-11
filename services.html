@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hocotate Freight bietet interplanetare
+    Lieferungen und einzigartige Schätze aus der ganzen Galaxie. Vertrauen
+    Sie uns für sichere und pünktliche Lieferungen.">
+    <title>Hocotate Freight - Services</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <picture>
+                <source srcset="Bilder/Logo/Logo.webp" type="image/webp">
+                <img src="Bilder/Logo/Logo.png" width="210" alt="Logobild">
+            </picture>
+        </div>
+        <h1>Unsere Dienstleistungen</h1>
+
+        <input type="checkbox" id="nav-toggle" class="nav-toggle">
+        <label for="nav-toggle" class="nav-toggle-label">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="services.html">Services</a></li>
+                <li><a href="schaetze.html">Schätze</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="services-intro">
+            <h2>Galaktische Transporte</h2>
+            <p>
+                Hocotate Freight ist führend im intergalaktischen Transport von Gütern und Schätzen.
+                Egal, ob Sie wertvolle Schätze von weit entfernten Planeten oder dringend benötigte
+                Waren innerhalb des Hocotate-Systems liefern möchten, sorgt unser erfahrenes Team für
+                eine schnelle, sichere und zuverlässige Lieferung.
+            </p>
+            <p>
+                Mit unserer Flotte an hochmodernen Raumschiffen garantieren wir die pünktliche Ankunft
+                Ihrer Lieferung, egal welche Gefahren der Weltraum bereithält. Setzen Sie auf unser
+                Know-how und unsere 30-jährige Erfahrung im interplanetaren Handel, um Ihre Fracht
+                an den richtigen Ort zu bringen.
+            </p>
+            <p>
+                Haben Sie Fragen oder möchten Sie ein Angebot für Ihre Lieferung erhalten? Füllen Sie
+                einfach das untenstehende Kontaktformular aus, und unser Team wird sich schnellstmöglich
+                mit Ihnen in Verbindung setzen!
+            </p>
+        </section>
+
+        <section id="galactic-transports">
+            <h2>Unser Captain und sein Schiff</h2>
+            <div class="galactic-transport-container">
+
+                <div class="image-container">
+                    <picture>
+                        <source srcset="Bilder/Services/Captain-Olimar.webp" type="image/webp">
+                        <img src="Bilder/Services/Captain-Olimar.png" alt="Captain">
+                    </picture>
+                    <p>Captain Olimar - Ihr zuverlässiger Pilot für interstellare Lieferungen.</p>
+                </div>
+
+                <div class="image-container">
+                    <picture>
+                        <source srcset="Bilder/Services/SS-Dolphin.webp" type="image/webp">
+                        <img src="Bilder/Services/SS-Dolphi.png" alt="Raumschiff">
+                    </picture>
+                    <p>SS Dolphin - Unser Raumschiff, bereit für den galaktischen Einsatz.</p>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="transport-form-section">
+            <h3>Transportanfrage</h3>
+            <p>Füllen Sie das Formular aus, um einen Transport bei uns anzufragen. Unser Team wird Ihnen ein
+                massgeschneidertes Angebot für Ihren intergalaktischen Transport zusenden.</p>
+
+            <form action="#" method="post" class="transport-form">
+
+                <h4>Absenderinformationen</h4>
+                <label for="sender-name">Name des Absenders (Raumfahrer):</label>
+                <input type="text" id="sender-name" name="sender-name" required placeholder="Ihr Name">
+
+                <label for="sender-address">Absenderadresse (Raumstation):</label>
+                <input type="text" id="sender-address" name="sender-address" required placeholder="Ihre Raumstation">
+
+                <label for="sender-planet">Planet des Absenders:</label>
+                <input type="text" id="sender-planet" name="sender-planet" required placeholder="Absenderplanet">
+
+
+                <h4>Empfängerinformationen</h4>
+                <label for="recipient-name">Name des Empfängers (Astronaut):</label>
+                <input type="text" id="recipient-name" name="recipient-name" required placeholder="Empfänger">
+
+                <label for="recipient-address">Empfängeradresse (Kolonie):</label>
+                <input type="text" id="recipient-address" name="recipient-address" required
+                    placeholder="Adresse der Kolonie">
+
+                <label for="recipient-planet">Planet des Empfängers:</label>
+                <input type="text" id="recipient-planet" name="recipient-planet" required placeholder="Zielplanet">
+
+
+                <h4>Frachtinformationen</h4>
+                <label for="cargo-description">Beschreibung der Fracht:</label>
+                <textarea id="cargo-description" name="cargo-description" rows="4" required
+                    placeholder="Kurze Beschreibung der galaktischen Fracht"></textarea>
+
+                <label for="cargo-weight">Gewicht der Fracht (in Tonnen):</label>
+                <input type="number" id="cargo-weight" name="cargo-weight" required placeholder="z.B. 1500 T">
+
+                <label for="cargo-dimensions">Masse der Fracht (Länge x Breite x Höhe):</label>
+                <input type="text" id="cargo-dimensions" name="cargo-dimensions" required
+                    placeholder="z.B. 25m x 25m x 30m">
+
+
+                <h4>Transportinformationen</h4>
+                <label for="transport-type">Transportart:</label>
+                <select id="transport-type" name="transport-type" required>
+                    <option value="" disabled selected>Wählen Sie die Transportart</option>
+                    <option value="express">Hyperschneller Express</option>
+                    <option value="standard">Standard</option>
+                    <option value="spezial">Spezial (für empfindliche Fracht)</option>
+                </select>
+
+                <label for="special-requirements">Besondere Anforderungen (Schutz vor Schwarzen Löchern, usw.):</label>
+                <textarea id="special-requirements" name="special-requirements" rows="3"
+                    placeholder="Falls vorhanden, spezielle Anforderungen (z.B. extra Schutz vor Strahlung)"></textarea>
+
+
+                <button type="submit">Anfrage absenden</button>
+            </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p><strong>©2024 Hocotate Freight. Alle Rechte vorbehalten.</strong></p>
+            <p><strong>Adresse: Planet Tatooine, Sektor 12, Galaxie Upsilon Andromedae</strong></p>
+            <p><strong>+41 123 456 789 (Intergalaktischer Tarif)</strong></p>
+            <p><strong>E-Mail: <a href="mailto:kontakt@hocotatefreight.gal"
+                        class="no-style-link">kontakt@hocotatefreight.gal</a></strong></p>
+
+            <!-- Social Media Links mit Logos -->
+            <div class="social-media">
+                <a href="https://www.facebook.com/hocotatefreight" target="_blank">
+                    <img src="Bilder/SocialMedia/facebook-Logo.png" alt="Facebook-Logo" loading="lazy">
+                </a>
+                <a href="https://www.instagram.com/hocotatefreight" target="_blank">
+                    <img src="Bilder/SocialMedia/instagram-logo.png" alt="Instagram-Logo" loading="lazy">
+                </a>
+                <a href="https://www.linkedin.com/company/hocotatefreight" target="_blank">
+                    <img src="Bilder/SocialMedia/linkedin-logo.png" alt="LinkedIn-Logo" loading="lazy">
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+</html>
